@@ -12,6 +12,8 @@ import { HeaderComponent } from './_theme/header/header.component';
 import { SideBarComponent } from './_theme/side-bar/side-bar.component';
 import { DealerComponent } from './module/dealer/dealer.component';
 import { LocationStrategy, HashLocationStrategy } from '@angular/common';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { MaterialModule } from './material/material.module';
 
 @NgModule({
   declarations: [
@@ -26,6 +28,8 @@ import { LocationStrategy, HashLocationStrategy } from '@angular/common';
     CoreModule,
     AppRoutingModule,
     ThemeModule,
+    MaterialModule,
+    NgbModule,
   ],
   providers: [{ provide: LocationStrategy, useClass: HashLocationStrategy },],
   bootstrap: [AppComponent]
